@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main class="sketch">
+    <div class="board-container">
+      <span class="instructions">Click to toggle pencil or eraser on/off</span>
+      <div class="board"></div>
+    </div>
+    <div class="eraser"></div>
+    <aside class="menu">
+      <div class="picker-container">
+        <label for="picker">Color Picker</label>
+        <input type="color" class="picker" name="picker" value="#000000">
+      </div>
+      <div class="pencil active">Pencil</div>
+      <div class="erase">Eraser</div>
+      <div class="clear">Clear</div>
+      <div class="indicator-container">
+        <div class="indicator-text-container">
+          <span>Grid Size:</span>
+          <span class="indicator"></span>
+        </div>
+        <input type="range" min="0" max="84" value="0" class="slider">
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="grid-lines" checked>
+        <label for="grid-lines">Grid Lines</label>
+      </div>
+      
+      <div class="picker"></div>
+    </aside>
+  </main>
+</body>
+</html>
